@@ -1,0 +1,82 @@
+<%- include('header') -%>
+<!--  -->
+
+<div class="container-fluid sticky-top header2">
+    
+    <div class="row justify-content-between py-2 px-0">
+        <div class="col-5  editprofile ">
+          <a href="/pro_page"><i class="fa-solid fa-xmark fa-lg ps-2"></i></a>
+
+        </div>
+        <div class="col-4  text-end saveprofile">
+          <!-- <a href="">Save</a> -->
+        </div>
+        
+    </div>
+</div>
+<!--  -->
+<div class="container-fluid project_location page_height back3">
+    <div class="row ">
+        <div class="col-8">
+            <h6 class="text-white f14">Project title & locationt</h6>
+        </div>
+        <div class="col-4 text-end">
+          <h6 class="mb-0 text-white f13">  2 of 6</h6>
+        </div>
+        <form action="" method="post">
+            <div class="">
+                <!-- <label class="text-white" for="">PIN code*</label> -->
+                <input class="w-100 back3 text-white " type="text" placeholder="Project title*">
+            </div>
+            <div class="mt-4">
+                <p class="text-white f13">Project location</p>
+            </div>
+            <div>
+                <label class="text-white" for="">Country</label>
+                <select class="w-100 back3 text-white " name="" id="">
+                    <option value="">None</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+            </div>
+            <div class="mt-4">
+                <input class="w-100 back3 text-white " type="text" placeholder="Address">
+            </div>
+        </form>
+        <div class=" mb-5 p_b p-0 m-0 ">    
+            <div class="progress progress-striped back3">
+              <div class="progress-bar">
+              </div>                       
+            </div> 
+          </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid footer_home2 px-0 text-center">
+   
+     <!-- <div class="project_location_1"></div> -->
+    <!-- <div class="project_location_1 border border-danger"> 
+        <div class="projetc_bar" id="projectbar"></div>
+    </div> -->
+    <div class="row text-center mx-0 justify-content-center ">
+        
+        <div class="col-6  text-center mt-1 py-1">
+           <a href="/upload_project_photo"><button class="btn btn-outline-light w-100 btn-sm">PREV</button></a>
+         
+        </div>
+       
+       
+        <div class="col-6 text-center mt-1 py-1">
+            <a href="/select_cover_photo"><button class="btn btn-light w-100 btn-sm"  id="nextpage">NEXT</button></a>
+        </div>
+    </div>
+</div>
+<!--  -->
+<%- include('footer') -%>

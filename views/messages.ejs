@@ -1,0 +1,45 @@
+<%- include('header') -%>
+<!--  -->
+
+<div class="container-fluid sticky-top header">
+    
+    <div class="row justify-content-between py-2 px-0">
+      <div class="col-6  notification  mt-1">
+        <div class="d-flex">
+           <a href="/notification">NOTIFICATIONS</a>
+           <input class="ms-3" type="radio">
+        </div>
+        
+       </div>
+        <div class="col-4  text-end notification ">
+          <!-- <a href="">Save</a> -->
+          <a href="/messages">MESSAGES</a>
+        </div>
+        
+    </div>
+</div>
+<div class="container-fluid messages">
+    <div class="row py-2 mx-1">
+        <div class="col-3 back2 text-white text-center rounded">
+            <div class="dropdown">
+                <div class=" dropdown-toggle py-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Inbox
+                </div>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"> Inbox </a></li>
+                  <li><a class="dropdown-item" href="#"> outbox</a></li>
+                  <li><a class="dropdown-item" href="#">Draf</a></li>
+                </ul>
+              </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 border border-dark p-5 ">
+            <h5>No messages yet</h5>
+        </div>
+    </div>
+</div>
+<!--  -->
+<%- include('footer_home') -%>
+<%- include('footer') -%>
+<!--  -->

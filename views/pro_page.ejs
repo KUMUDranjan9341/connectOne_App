@@ -1,0 +1,1099 @@
+<%- include('header_2') -%>
+<!--  -->
+<div class="sticky-top container-fluid bcolor headhight">
+    <div class=" d-flex justify-content-center  text-white pt-2  mb-0 pb-0">
+    <div class="col-2"><a href="/idea_page_main"><i class="fa-solid fa-arrow-left mb-0 pb-0 fa-lg text-white"></i></a></div>
+    <div class="col-10"><p class="font16 text-capitalize mb-0 pb-0 fw-bold">find professionals</p></div>
+    </div>
+</div>
+
+<div class="mt-2 d-flex row1 mb-2">
+
+  <div class="col-3 px-1 text-center text-decoration-none ">
+      <a href="#" class="text-decoration-none" id="filterButton">
+          <div class="topic rounded py-1 shadow2">
+              <p class="mb-0 text-light f13">Filter</p>
+          </div>
+      </a>
+  </div>
+<div class="filter-modal p-0 m-0 " id="filterModal">
+  <div class="row p-0 m-0">
+   <div class="col-12 border-bottom topic shadow2">
+    <div class="row">
+      <div class="col-1  py-2 ">
+        <a href=""> <i data-dismiss="modal" class="fa-solid fa-xmark fa-xl text-white"></i></a>
+       </div>
+       <div class="col-8   py-2 text-start">
+         <p class="mb-0 text-white">Filter</p>
+       </div>
+       <div class="col-3   py-2 text-end">
+         <p class="mb-0 fw-bold text-white">Done</p>
+       </div>
+    </div>
+   </div>
+  </div>
+  <!-- Content of the filter modal goes here -->
+<div class="px-2 pb-5">
+  <div class="row justify-content-center ">
+    <div class="col-4">
+      <p class="mb-2 f14">Location</p>
+    </div>
+    <div class="col-4"></div>
+    <div class="col-4 text-end">
+      <a id="filterButton2" href=""><i class="fa-solid fa-caret-right text-black"></i></a>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-4 f14">
+      <p class="mb-2">Pro Category</p>
+    </div>
+    <div class="col-4"></div>
+    <div class="col-4 text-end">
+      <a href=""><i class="fa-solid fa-caret-right text-black"></i></a>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-4 f14">
+      <p class="mb-2">Highlight</p>
+    </div>
+    <div class="col-4"></div>
+    <div class="col-4 text-end">
+      <a href=""><i class="fa-solid fa-caret-right text-black"></i></a>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-4 f14" >
+      <p class="mb-2">Language</p>
+    </div>
+    <div class="col-4"></div>
+    <div class="col-4 text-end">
+      <a href=""><i class="fa-solid fa-caret-right text-black"></i></a>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-4">
+      <p class="mb-2 f14">Rating</p>
+    </div>
+    <div class="col-4"></div>
+    <div class="col-4 text-end">
+      <a href=""><i class="fa-solid fa-caret-right text-black"></i></a>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-4">
+      <p class="mb-2 f14">Sort</p>
+    </div>
+    <div class="col-4"></div>
+    <div class="col-4 text-end">
+      <a href=""><i class="fa-solid fa-caret-right text-black"></i></a>
+    </div>
+  </div>
+
+
+</div>
+<div  iv class="col-12 text-center topic reset">
+  <a class="btn w-100 text-white" type="button" href="">Reset Filter</a>
+</div>
+</div>
+<!--  -->
+<div class="col-3 px-1 text-center text-decoration-none">
+  <a href="#" class="text-decoration-none" id="filterButto4">
+      <div class="topic rounded py-1 shadow2">
+          <p class="mb-0 text-light f13">Location</p>
+      </div>
+  </a>
+</div>
+<div class="filter-modal filter_model p-0 m-0" id="filterModal2">
+  <div class="row p-0 m-0">
+
+    <div class="col-12 border-bottom topic shadow2">
+     <div class="row">
+       <div class="col-1  py-2 ">
+         <a href=""> <i data-dismiss="modal" class="fa-solid fa-xmark fa-xl text-white"></i></a>
+        </div>
+        <div class="col-8   py-2 text-start">
+          <p class="mb-0 text-white">Location</p>
+        </div>
+        <div class="col-3   py-2 text-end">
+          <p class="mb-0 fw-bold text-white">Reset</p>
+        </div>
+     </div>
+    </div>
+
+   </div>
+<!-- Content of the filter modal goes here -->
+<div class="px-2 py-3">
+  <div class="row">
+    <div class="col-3 text-center ">
+      <div class=" py-2 ">
+        <p class="f13 fw-bold mb-0">10km</p>
+      </div>
+    </div>
+    <div class="col-3 text-center ">
+      <div class=" py-2">
+        <p  class="f13 fw-bold mb-0">25km</p>
+      </div>
+    </div>
+    <div class="col-3 text-center ">
+      <div class=" py-2">
+        <p  class="f13 fw-bold mb-0">50km</p>
+      </div>
+    </div>
+    <div class="col-3 text-center ">
+      <div class=" py-2">
+        <p  class="f13 fw-bold mb-0">100km</p>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-10 ">
+     <div class=" b_border">
+      <input class="w-100 outline_none ps-2" type="text" placeholder="Search Location">
+     </div>
+    </div>
+    <div class="col-2">
+      <i class="fa-solid fa-location-dot"></i>
+    </div>
+    <div class="text-center mt-3">
+      <div class="py-1 topic rounded">
+        <a type="button" class=" w-100 text-white" href="">APPLY</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+<!--  -->
+<div class="col-4 px-1 text-center text-decoration-none">
+  <a href="#" class="text-decoration-none" id="filterButton3">
+      <div class="topic rounded py-1 shadow2">
+          <p class="mb-0 text-light f13">Pro Category</p>
+      </div>
+  </a>
+</div>
+
+<div class="filter-modal p-0 m-0" id="filterModal3">
+  <div class="row p-0 m-0 sticky-top">
+
+    <div class="col-12 border-bottom topic shadow2">
+     <div class="row">
+       <div class="col-1  py-2 ">
+         <a href=""> <i data-dismiss="modal" class="fa-solid fa-xmark fa-xl text-white"></i></a>
+        </div>
+        <div class="col-8   py-2 text-start">
+          <p class="mb-0 text-white">Pro Category</p>
+        </div>
+        <div class="col-3   py-2 text-end">
+          <p class="mb-0 fw-bold text-white">Done</p>
+        </div>
+     </div>
+    </div>
+
+   </div>
+<!-- Content of the filter modal goes here -->
+<div class="px-2">
+  <a href=""><p class="f12">Home Desion  & Designers</p></a>
+<a href=""><p class="f12">2</p></a>
+<a href=""><p class="f12">3</p></a>
+<a href=""><p class="f12">3</p></a>
+<a href=""><p class="f12">5</p></a>
+<a href=""><p class="f12">6</p></a>
+<a href=""><p class="f12">7</p></a>
+<a href=""><p class="f12">8</p></a>
+<a href=""><p class="f12">9</p></a>
+<a href=""><p class="f12">10</p></a>
+<a href=""><p class="f12">11</p></a>
+</div>
+</div>
+<!--  -->
+<div class="col-3 px-1 text-center text-decoration-none">
+  <a href="#" class="text-decoration-none" id="filterButton4">
+      <div class="topic rounded py-1 shadow2">
+          <p class="mb-0 text-light f13">Highlits</p>
+      </div>
+  </a>
+</div>
+<div class="filter-modal p-0 m-0" id="filterModal4">
+  <div class="row p-0 m-0">
+
+    <div class="col-12 border-bottom topic shadow2">
+     <div class="row">
+       <div class="col-1  py-2 ">
+         <a href=""> <i data-dismiss="modal" class="fa-solid fa-xmark fa-xl text-white"></i></a>
+        </div>
+        <div class="col-8   py-2 text-start">
+          <p class="mb-0 text-white">Highlits</p>
+        </div>
+        <div class="col-3   py-2 text-end">
+          <p class="mb-0 fw-bold text-white">Done</p>
+        </div>
+     </div>
+    </div>
+
+   </div>
+<!-- Content of the filter modal goes here -->
+<div class="px-2">
+  <!-- <a href=""><p>location</p></a>
+<a href=""><p>procategory</p></a>
+<a href=""><p>Highlight</p></a>
+<a href=""><p>language</p></a>
+<a href=""><p>Rating</p></a>
+<a href=""><p>sorts</p></a> -->
+</div>
+<div  iv class="col-12 text-center topic reset">
+  <a class="btn w-100 text-white" type="button" href="">Reset Highlights</a>
+</div>
+</div>
+<!--  -->
+
+<div class="col-3 px-1 text-center text-decoration-none">
+  <a href="#" class="text-decoration-none" id="filterButton5">
+      <div class="topic rounded py-1 shadow2">
+          <p class="mb-0 text-light f13">language</p>
+      </div>
+  </a>
+</div>
+<div class="filter-modal p-0 m-0" id="filterModal5">
+  <div class="row p-0 m-0">
+
+    <div class="col-12 border-bottom topic shadow2">
+     <div class="row">
+       <div class="col-1  py-2 ">
+         <a href=""> <i data-dismiss="modal" class="fa-solid fa-xmark fa-xl text-white"></i></a>
+        </div>
+        <div class="col-8   py-2 text-start">
+          <p class="mb-0 text-white">Language</p>
+        </div>
+        <div class="col-3   py-2 text-end">
+          <p class="mb-0 fw-bold text-white">Done</p>
+        </div>
+     </div>
+    </div>
+
+   </div>
+<!-- Content of the filter modal goes here -->
+<div class="px-2">
+  <a href=""><p class="f12">1</p></a>
+<a href=""><p class="f12">2</p></a>
+<a href=""><p class="f12">3</p></a>
+<a href=""><p class="f12">4</p></a>
+<a href=""><p class="f12">5</p></a>
+<a href=""><p class="f12">6</p></a>
+</div>
+<div  iv class="col-12 text-center topic reset">
+  <a class="btn w-100 text-white" type="button" href="">Reset Languages</a>
+</div>
+</div>
+<!--  -->
+
+<div class="col-3 px-1 text-center text-decoration-none">
+  <a href="#" class="text-decoration-none" id="filterButton6">
+      <div class="topic rounded py-1 shadow2">
+          <p class="mb-0 text-light f13">Rating</p>
+      </div>
+  </a>
+</div>
+<div class="filter-modal p-0 m-0" id="filterModal6">
+  <div class="row p-0 m-0">
+
+    <div class="col-12 border-bottom topic shadow2">
+     <div class="row">
+       <div class="col-1  py-2 ">
+         <a href=""> <i data-dismiss="modal" class="fa-solid fa-xmark fa-xl text-white"></i></a>
+        </div>
+        <div class="col-8   py-2 text-start">
+          <p class="mb-0 text-white">Rating</p>
+        </div>
+        <div class="col-3   py-2 text-end">
+          <p class="mb-0 fw-bold text-white">Done</p>
+        </div>
+     </div>
+    </div>
+
+   </div>
+<!-- Content of the filter modal goes here -->
+<div class="px-2">
+  <a href=""><p class="f12">1</p></a>
+<a href=""><p class="f12">2</p></a>
+<a href=""><p class="f12">3</p></a>
+<a href=""><p class="f12">4</p></a>
+<a href=""><p class="f12">5</p></a>
+<a href=""><p class="f12">6</p></a>
+</div>
+<div  iv class="col-12 text-center topic reset">
+  <a class="btn w-100 text-white" type="button" href="">Reset Rating</a>
+</div>
+</div>
+<!--  -->
+
+<div class="col-3 px-1 text-center text-decoration-none">
+  <a href="#" class="text-decoration-none" id="filterButton7">
+      <div class="topic rounded py-1 shadow2">
+          <p class="mb-0 text-light f13">Sorts</p>
+      </div>
+  </a>
+</div>
+<div class="filter-modal p-0 m-0" id="filterModal7">
+  <div class="row p-0 m-0">
+
+    <div class="col-12 border-bottom topic shadow2">
+     <div class="row">
+       <div class="col-1  py-2 ">
+         <a href=""> <i data-dismiss="modal" class="fa-solid fa-xmark fa-xl text-white"></i></a>
+        </div>
+        <div class="col-8   py-2 text-start">
+          <p class="mb-0 text-white">Sort</p>
+        </div>
+        <div class="col-3   py-2 text-end">
+          <p class="mb-0 fw-bold text-white"></p>
+        </div>
+     </div>
+    </div>
+
+   </div>
+<!-- Content of the filter modal goes here -->
+<div class="px-2">
+  <a href=""><p class="f12">Best Match</p></a>
+<a href=""><p class="f12">Most Reviewed</p></a>
+<a href=""><p class="f12">recently Reviewed</p></a>
+<a href=""><p class="f12"></p></a>
+<a href=""><p class="f12"></p></a>
+<a href=""><p></p></a>
+</div>
+</div>
+
+</div>
+
+
+
+
+<!-- <div class="container-fluid px-0 m-0 py-2" >
+    <div class="row px-0 mx-0">
+
+
+        <nav class="nav-horizontal-scroll px-1 m-0">
+            <ul>
+              <li data-page="one" class="nav-active shadow2">
+                <span >filter</span>
+                <div class="nav-horizontal-scroll-onhover-items ">
+                    
+                  <ul>
+                    
+                    <li data-page="one">
+                      <span>One</span>
+                    </li>
+                    <li data-page="two">
+                      <span>Two</span>
+                    </li>
+                    <li data-page="three">
+                      <span>Three</span>
+                    </li>
+                    <li data-page="four">
+                      <span>Four</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              
+              <li data-page="two shadow2">
+                <span>location</span>
+                <div class="nav-horizontal-scroll-onhover-items">
+                  <ul>
+                    <li data-page="one">
+                      <span>One</span>
+                    </li>
+                    <li data-page="two">
+                      <span>Two</span>
+                    </li>
+                    <li data-page="three">
+                      <span>Three</span>
+                    </li>
+                    <li data-page="four">
+                      <span>Four</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li data-page="three shadow2">
+                <span>procategory</span>
+                <div class="nav-horizontal-scroll-onhover-items">
+                  <ul>
+                    <li data-page="one">
+                      <span>One</span>
+                    </li>
+                    <li data-page="two">
+                      <span>Two</span>
+                    </li>
+                    <li data-page="three">
+                      <span>Three</span>
+                    </li>
+                    <li data-page="four">
+                      <span>Four</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li data-page="four shadow2">
+                <span>Highlight</span>
+                <div class="nav-horizontal-scroll-onhover-items">
+                  <ul>
+                    <li data-page="one">
+                      <span>One</span>
+                    </li>
+                    <li data-page="two">
+                      <span>Two</span>
+                    </li>
+                    <li data-page="three">
+                      <span>Three</span>
+                    </li>
+                    <li data-page="four">
+                      <span>Four</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li data-page="one shadow2">
+                <span>Language</span>
+                <div class="nav-horizontal-scroll-onhover-items">
+                  <ul>
+                    <li data-page="one">
+                      <span>One</span>
+                    </li>
+                    <li data-page="two">
+                      <span>Two</span>
+                    </li>
+                    <li data-page="three">
+                      <span>Three</span>
+                    </li>
+                    <li data-page="four">
+                      <span>Four</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li data-page="two shadow2">
+                <span>Rating</span>
+                <div class="nav-horizontal-scroll-onhover-items">
+                  <ul>
+                    <li data-page="one">
+                      <span>One</span>
+                    </li>
+                    <li data-page="two">
+                      <span>Two</span>
+                    </li>
+                    <li data-page="three">
+                      <span>Three</span>
+                    </li>
+                    <li data-page="four">
+                      <span>Four</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li data-page="three shadow2">
+                <span>Sorts</span>
+                <div class="nav-horizontal-scroll-onhover-items">
+                  <ul>
+                    <li data-page="one">
+                      <span>One</span>
+                    </li>
+                    <li data-page="two">
+                      <span>Two</span>
+                    </li>
+                    <li data-page="three">
+                      <span>Three</span>
+                    </li>
+                    <li data-page="four">
+                      <span>Four</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              
+            </ul>
+          </nav>
+       
+
+
+
+        </div>
+        </div> -->
+        
+  
+
+<!-- <div class="container-fluid  mt-5 p-0 m-0  ">
+    <div class="row m-0 p-0">
+      
+
+        <div class="col-4  p-0 m-0 px-2 ">
+            <div class=" bcolor py-1 text-white text-center rounded">
+                <div class=" dropdown  p-0 m-0">
+                
+                    <div class=" dropdown-toggle  py-1"  type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 10px;">
+                        Filter
+                     </div>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="">filter 1</a></li>
+                        <li><a class="dropdown-item" href="">filter 2</a></li>
+                        <li><a class="dropdown-item" href="">filter 3</a></li>
+                     </ul> 
+                
+            </div>
+            </div>
+        </div>
+        <div class="col-4 px-2">
+          <div class=" bcolor py-1 text-white text-center rounded">
+            <div class="dropdown p-0 m-0">
+            
+                <div class="dropdown-toggle  py-1"type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 10px;">
+                    Location
+                 </div>
+                 <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="">option 1</a></li>
+                    <li><a class="dropdown-item" href="">option 2</a></li>
+                    <li><a class="dropdown-item" href="">option 3</a></li>
+                 </ul>  
+               </div> 
+          </div>
+            </div>
+       
+        <div class="col-4 px-2 ">
+           
+           <div class=" bcolor text-white py-1 text-center rounded">
+            <div class=" dropdown p-0 m-0">
+                <div class="dropdown-toggle  py-1"type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 10px;" >
+                    Procatagory
+                 </div>
+                 <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="">option 1</a></li>
+                    <li><a class="dropdown-item" href="">option 2</a></li>
+                    <li><a class="dropdown-item" href="">option 3</a></li>
+                 </ul> 
+         
+            </div>
+           </div>
+        </div>
+
+        
+        <div class="col-4  p-0 m-0 ps-2 ">
+            <div class=" bcolor py-1 text-white text-center rounded">
+                <div class=" dropdown  p-0 m-0">
+                
+                    <div class=" dropdown-toggle   py-1"  type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 10px;">
+                        Highlight
+                     </div>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="">filter 1</a></li>
+                        <li><a class="dropdown-item" href="">filter 2</a></li>
+                        <li><a class="dropdown-item" href="">filter 3</a></li>
+                     </ul> 
+                
+            </div>
+            </div>
+        </div>
+        <div class="col-4 px-1">
+          <div class=" bcolor py-1 text-white text-center rounded">
+            <div class="dropdown p-0 m-0">
+            
+                <div class="dropdown-toggle  py-1"type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 10px;">
+                    Language
+                 </div>
+                 <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="">filter 1</a></li>
+                    <li><a class="dropdown-item" href="">filter 2</a></li>
+                    <li><a class="dropdown-item" href="">filter 3</a></li>
+                 </ul>  
+               </div> 
+          </div>
+            </div>
+       
+        <div class="col-4 px-1 ">
+           
+           <div class=" bcolor text-white py-1 text-center rounded">
+            <div class=" dropdown p-0 m-0">
+                <div class="dropdown-toggle  py-1"type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 10px;" >
+                    Rating
+                 </div>
+                 <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="">filter 1</a></li>
+                    <li><a class="dropdown-item" href="">filter 2</a></li>
+                    <li><a class="dropdown-item" href="">filter 3</a></li>
+                 </ul> 
+         
+            </div>
+           </div>
+        </div>
+
+        <div class="col-4 pe-2">
+           
+           <div class=" bcolor text-white py-1 text-center rounded">
+            <div class=" dropdown p-0 m-0">
+                <div class="dropdown-toggle  py-1"type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 10px;" >
+                    sorts
+                 </div>
+                 <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="">filter 1</a></li>
+                    <li><a class="dropdown-item" href="">filter 2</a></li>
+                    <li><a class="dropdown-item" href="">filter 3</a></li>
+                 </ul> 
+         
+            </div>
+           </div>
+        </div>
+
+
+    </div>
+</div> -->
+
+
+
+
+<!-- <div class="container-fluid  mt-2 p-0 m-0">
+    <div class="row m-0 p-0">
+
+        <div class="col-3  p-0 m-0 ps-2 ">
+            <div class=" bcolor py-1 text-white text-center rounded">
+                <div class=" dropdown  p-0 m-0">
+                
+                    <div class=" dropdown-toggle   py-1"  type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 10px;">
+                        Highlight
+                     </div>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="">filter 1</a></li>
+                        <li><a class="dropdown-item" href="">filter 2</a></li>
+                        <li><a class="dropdown-item" href="">filter 3</a></li>
+                     </ul> 
+                
+            </div>
+            </div>
+        </div>
+        <div class="col-3 px-1">
+          <div class=" bcolor py-1 text-white text-center rounded">
+            <div class="dropdown p-0 m-0">
+            
+                <div class="dropdown-toggle  py-1"type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 10px;">
+                    Language
+                 </div>
+                 <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="">filter 1</a></li>
+                    <li><a class="dropdown-item" href="">filter 2</a></li>
+                    <li><a class="dropdown-item" href="">filter 3</a></li>
+                 </ul>  
+               </div> 
+          </div>
+            </div>
+       
+        <div class="col-3 px-1 ">
+           
+           <div class=" bcolor text-white py-1 text-center rounded">
+            <div class=" dropdown p-0 m-0">
+                <div class="dropdown-toggle  py-1"type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 10px;" >
+                    Rating
+                 </div>
+                 <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="">filter 1</a></li>
+                    <li><a class="dropdown-item" href="">filter 2</a></li>
+                    <li><a class="dropdown-item" href="">filter 3</a></li>
+                 </ul> 
+         
+            </div>
+           </div>
+        </div>
+
+        <div class="col-3 pe-2">
+           
+           <div class=" bcolor text-white py-1 text-center rounded">
+            <div class=" dropdown p-0 m-0">
+                <div class="dropdown-toggle  py-1"type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 10px;" >
+                    sorts
+                 </div>
+                 <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="">filter 1</a></li>
+                    <li><a class="dropdown-item" href="">filter 2</a></li>
+                    <li><a class="dropdown-item" href="">filter 3</a></li>
+                 </ul> 
+         
+            </div>
+           </div>
+        </div>
+
+
+    </div>
+</div> -->
+
+
+
+<div class="container-fluid ">
+    <div class="row">
+
+
+
+<div class="mx-0 px-0 get_start ">
+<div class="d-flex justify-content-center bcolor flex-column p-2 text-light pb-3">
+    <p class="font14 mt-0 pt-0 mb-0 pb-0">Get matched With Local Professionals</p>
+    <p class="font10 mb-0 pb-0 mt-0 pt-0">Answer A Few Question We Will Put In Touch With Pros Who Can Help.</p>   
+<div>
+<form action="" method="post">
+    
+<div class=" d-flex align-items-center fclass pt-2">
+    <div class="  px-2 ">
+        <div class="shadow2 rounded ">
+            <input type="text" name="" placeholder=" Pin code" class="py-2 rounded ps-1" id="" >
+        </div>
+    </div>
+    <div class=" bg-light rounded text-center ms-2 shadow2">
+        <a type="button" class="btn py-1  " href="/help">Get Started</a>
+       </div>
+</div>
+</form>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container-fluid mb-5" >
+    <div class="row">
+<div class="p-0 m-0 px-2 py-2">
+    
+<div class="rounded shadow2 ">
+    <div class=" position1 p-0 m-0" >
+        <div><img src="/static/images/background.jpeg" alt="" class="img-fluid rounded-top" srcset="">
+        <div><img src="/static/images/icon1.jpeg" alt="" height="70px" width="70px" class="img-fluid rounded-circle position2" srcset=""></div>
+    </div></div>
+    
+    
+    
+    <div class="d-flex justify-content-center flex-column border px-2 py-1" style="border: 2px solid red;">    
+               <div><p class="font16 mt-0 ms-1 pt-0 mb-0 pb-0">kartik events</p></div>
+               <div><i class="fa-solid fa-star text-center ms-1"> </i><span class="font13"> 4.4 &nbsp; (24reviews)</span></div>
+              <div><i class="fa-solid fa-route ms-1"></i><span class="font13"> Delhi India</span></div>
+
+<div class=" row p-0 m-0 mt-3 mb-3 py-2">
+    
+      <a class="p-0 m-0" href="">
+        <div class="text-white topic text-center py-2 rounded px-0">
+          <i class="fa-solid fa-message"></i><span class="ps-2">Send Message</span>
+        </div>
+      </a>
+  
+    <!-- <a href="" type="button " class="btn border topic text-white">Send Message</a> -->
+</div>
+
+ </div>
+ 
+</div>
+</div>
+
+</div>
+</div>
+ 
+    <!-- <div class="bttn3 mt-2 mb-3 w-75 d-flex justify-content-around  align-items-center py-1  align-content-center border border-danger">
+    <div> <i class="fa-solid fa-message"></i></div>
+    <div class="text-uppercase"><p class="mb-0">send Message</p></div>
+    </div> -->
+
+<!-- <div class="container-fluid" style="border: 2px solid red;">
+    <div class="row">
+
+<div class=" position1" >
+    <div><img src="/static/images/background.jpeg" alt="" class="img-fluid" srcset="">
+    <div><img src="/static/images/icon1.jpeg" alt="" height="70px" width="70px" class="img-fluid rounded-circle position2" srcset=""></div>
+</div>
+</div>
+
+
+
+<div class="d-flex justify-content-center flex-column border px-2 py-1" style="border: 2px solid red;">    
+           <div><p class="font16 mt-0 ms-1 pt-0 mb-0 pb-0">kartik events</p></div>
+           <div><i class="fa-solid fa-star text-center ms-1"> </i><span class="font13"> 4.4 &nbsp; (24reviews)</span></div>
+          <div><i class="fa-solid fa-route ms-1"></i><span class="font13"> Delhi India</span></div>
+        </div>
+
+
+<div class="bttn3 mt-2 w-75 d-flex justify-content-around  align-items-center py-1  align-content-center border border-danger">
+<div> <i class="fa-solid fa-message"></i></div>
+<div class="text-uppercase"><p class="mb-0">send Message</p></div>
+</div>
+
+</div>
+</div> -->
+
+<!--   
+
+<div class=" mt-1 position1">
+    <div><img src="/static/images/background2.jpg" alt=""  class="img-fluid" srcset="">
+    <div><img src="/static/images/icon2.jpeg" alt="" height="70px" width="70px" class="img-fluid rounded-circle position2" srcset=""></div>
+</div></div>
+
+<div class="d-flex justify-content-center flex-column border mb-1">    
+    <div><p class="font16 mt-0 pt-0 mb-0 pb-0 ms-1">Storm Reloded</p></div>
+    <div><i class="fa-solid fa-star text-center ms-1"> </i><span class="font13"> 5.5 &nbsp; (10k reviews)</span></div>
+   <div><i class="fa-solid fa-route ms-1"></i><span class="font13"> Delhi India</span></div>
+ </div>
+ <div class="bttn3  d-flex w-75 justify-content-around mt-2 align-items-center py-1  align-content-center">
+    <div> <i class="fa-solid fa-message"></i></div>
+    <div class="text-uppercase"><p class="mb-0">send Message</p></div>
+    </div>
+    
+<div>
+    <div><img src="./images/weddin.jpeg" class="img-fluid" alt="" srcset=""></div>
+</div> -->
+
+
+
+
+<!-- <div class="container-fluid">
+    <div class="row">
+
+    </div>
+</div> -->
+
+
+
+
+
+
+
+
+    
+<%- include('footer_home') -%>
+<!--  -->
+<%- include('footer_2') -%>
+
+ <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const filterButton = document.getElementById('filterButton');
+    const filterModal = document.getElementById('filterModal');
+    const overlay = document.createElement('div');
+    overlay.className = 'overlay';
+
+    // Open the modal when the button is clicked
+    filterButton.addEventListener('click', () => {
+        filterModal.style.display = 'block';
+        setTimeout(() => {
+            filterModal.style.transform = 'translateY(0)';
+            filterModal.style.bottom = '0';
+            overlay.style.display = 'block';
+            document.body.appendChild(overlay);
+        }, 10);
+    });
+
+    // Close the modal when the overlay is clicked
+    overlay.addEventListener('click', () => {
+        filterModal.style.transform = 'translateY(50%)';
+        filterModal.style.bottom = '-50%';
+        overlay.style.display = 'none';
+        setTimeout(() => {
+            filterModal.style.display = 'none';
+            document.body.removeChild(overlay);
+        }, 100);
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const filterButton = document.getElementById('filterButton2');
+    const filterModal = document.getElementById('filterModal2');
+    const overlay = document.createElement('div');
+    overlay.className = 'overlay';
+
+    // Open the modal when the button is clicked
+    filterButton.addEventListener('click', () => {
+        filterModal.style.display = 'block';
+        setTimeout(() => {
+            filterModal.style.transform = 'translateY(0)';
+            filterModal.style.bottom = '0';
+            overlay.style.display = 'block';
+            document.body.appendChild(overlay);
+        }, 10);
+    });
+
+    // Close the modal when the overlay is clicked
+    overlay.addEventListener('click', () => {
+        filterModal.style.transform = 'translateY(50%)';
+        filterModal.style.bottom = '-50%';
+        overlay.style.display = 'none';
+        setTimeout(() => {
+            filterModal.style.display = 'none';
+            document.body.removeChild(overlay);
+        }, 100);
+    });
+});
+document.addEventListener('DOMContentLoaded', function () {
+    const filterButton = document.getElementById('filterButto4');
+    const filterModal = document.getElementById('filterModal2');
+    const overlay = document.createElement('div');
+    overlay.className = 'overlay';
+
+    // Open the modal when the button is clicked
+    filterButton.addEventListener('click', () => {
+        filterModal.style.display = 'block';
+        setTimeout(() => {
+            filterModal.style.transform = 'translateY(0)';
+            filterModal.style.bottom = '0';
+            overlay.style.display = 'block';
+            document.body.appendChild(overlay);
+        }, 10);
+    });
+
+    // Close the modal when the overlay is clicked
+    overlay.addEventListener('click', () => {
+        filterModal.style.transform = 'translateY(50%)';
+        filterModal.style.bottom = '-50%';
+        overlay.style.display = 'none';
+        setTimeout(() => {
+            filterModal.style.display = 'none';
+            document.body.removeChild(overlay);
+        }, 100);
+    });
+});
+document.addEventListener('DOMContentLoaded', function () {
+    const filterButton = document.getElementById('filterButton3');
+    const filterModal = document.getElementById('filterModal3');
+    const overlay = document.createElement('div');
+    overlay.className = 'overlay';
+
+    // Open the modal when the button is clicked
+    filterButton.addEventListener('click', () => {
+        filterModal.style.display = 'block';
+        setTimeout(() => {
+            filterModal.style.transform = 'translateY(0)';
+            filterModal.style.bottom = '0';
+            overlay.style.display = 'block';
+            document.body.appendChild(overlay);
+        }, 10);
+    });
+
+    // Close the modal when the overlay is clicked
+    overlay.addEventListener('click', () => {
+        filterModal.style.transform = 'translateY(50%)';
+        filterModal.style.bottom = '-50%';
+        overlay.style.display = 'none';
+        setTimeout(() => {
+            filterModal.style.display = 'none';
+            document.body.removeChild(overlay);
+        }, 100);
+    });
+});
+document.addEventListener('DOMContentLoaded', function () {
+    const filterButton = document.getElementById('filterButton4');
+    const filterModal = document.getElementById('filterModal4');
+    const overlay = document.createElement('div');
+    overlay.className = 'overlay';
+
+    // Open the modal when the button is clicked
+    filterButton.addEventListener('click', () => {
+        filterModal.style.display = 'block';
+        setTimeout(() => {
+            filterModal.style.transform = 'translateY(0)';
+            filterModal.style.bottom = '0';
+            overlay.style.display = 'block';
+            document.body.appendChild(overlay);
+        }, 10);
+    });
+
+    // Close the modal when the overlay is clicked
+    overlay.addEventListener('click', () => {
+        filterModal.style.transform = 'translateY(50%)';
+        filterModal.style.bottom = '-50%';
+        overlay.style.display = 'none';
+        setTimeout(() => {
+            filterModal.style.display = 'none';
+            document.body.removeChild(overlay);
+        }, 100);
+    });
+});
+document.addEventListener('DOMContentLoaded', function () {
+    const filterButton = document.getElementById('filterButton5');
+    const filterModal = document.getElementById('filterModal5');
+    const overlay = document.createElement('div');
+    overlay.className = 'overlay';
+
+    // Open the modal when the button is clicked
+    filterButton.addEventListener('click', () => {
+        filterModal.style.display = 'block';
+        setTimeout(() => {
+            filterModal.style.transform = 'translateY(0)';
+            filterModal.style.bottom = '0';
+            overlay.style.display = 'block';
+            document.body.appendChild(overlay);
+        }, 10);
+    });
+
+    // Close the modal when the overlay is clicked
+    overlay.addEventListener('click', () => {
+        filterModal.style.transform = 'translateY(50%)';
+        filterModal.style.bottom = '-50%';
+        overlay.style.display = 'none';
+        setTimeout(() => {
+            filterModal.style.display = 'none';
+            document.body.removeChild(overlay);
+        }, 100);
+    });
+});
+document.addEventListener('DOMContentLoaded', function () {
+    const filterButton = document.getElementById('filterButton6');
+    const filterModal = document.getElementById('filterModal6');
+    const overlay = document.createElement('div');
+    overlay.className = 'overlay';
+
+    // Open the modal when the button is clicked
+    filterButton.addEventListener('click', () => {
+        filterModal.style.display = 'block';
+        setTimeout(() => {
+            filterModal.style.transform = 'translateY(0)';
+            filterModal.style.bottom = '0';
+            overlay.style.display = 'block';
+            document.body.appendChild(overlay);
+        }, 10);
+    });
+
+    // Close the modal when the overlay is clicked
+    overlay.addEventListener('click', () => {
+        filterModal.style.transform = 'translateY(50%)';
+        filterModal.style.bottom = '-50%';
+        overlay.style.display = 'none';
+        setTimeout(() => {
+            filterModal.style.display = 'none';
+            document.body.removeChild(overlay);
+        }, 100);
+    });
+});
+document.addEventListener('DOMContentLoaded', function () {
+    const filterButton = document.getElementById('filterButton7');
+    const filterModal = document.getElementById('filterModal7');
+    const overlay = document.createElement('div');
+    overlay.className = 'overlay';
+
+    // Open the modal when the button is clicked
+    filterButton.addEventListener('click', () => {
+        filterModal.style.display = 'block';
+        setTimeout(() => {
+            filterModal.style.transform = 'translateY(0)';
+            filterModal.style.bottom = '0';
+            overlay.style.display = 'block';
+            document.body.appendChild(overlay);
+        }, 10);
+    });
+
+    // Close the modal when the overlay is clicked
+    overlay.addEventListener('click', () => {
+        filterModal.style.transform = 'translateY(50%)';
+        filterModal.style.bottom = '-50%';
+        overlay.style.display = 'none';
+        setTimeout(() => {
+            filterModal.style.display = 'none';
+            document.body.removeChild(overlay);
+        }, 100);
+    });
+});
+
+ </script>

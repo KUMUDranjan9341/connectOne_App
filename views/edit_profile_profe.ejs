@@ -1,0 +1,140 @@
+<%- include('header') -%>
+<!--  -->
+<div class="container-fluid sticky-top header">
+    
+    <div class="row justify-content-between py-2  ">
+        <div class="col-5  editprofile ">
+          <a href=""><i class="fa-solid fa-arrow-left pe-2"></i>  Edit profile</a>
+
+        </div>
+        <div class="col-4  text-end saveprofile">
+          <a href="#">Save</a>
+        </div>
+        
+    </div>
+</div>
+<div class="container-fluid  mt-0  edit_profile p-0 edit_profile_bg">
+  <div class="row justify-content-center text-center m-0 p-0">
+
+ <div class="col-12 p-0 m-0">
+     <div class="row justify-content-center p-0">
+      <div class="col-6 mb-0 pt-3">
+       
+        <div class="ab">
+        
+        
+           <form id="file-upload" autocomplete="off">
+             <div class="ab2"><img class="img-fluid rounded-circle w-75" src="static/images/profile_img.webp" alt=""  id="output">
+             <input onchange="loadfile(event)" id="input-file-upload" id="" type="file" name="profile_img">
+             <p id="btn-file-upload" class="text-white" type="">Add photo +</p>
+           </form>
+         </div>
+         <div class="ab1">  
+           <!-- <label for="profile" class="pro">file</label> -->
+           <!-- <input type="file" name="profile" id=""> -->
+        
+         </div>
+ 
+           </div>
+     </div>
+      </div>
+
+      
+           
+     
+      </div></div>
+      
+
+
+
+      <div class="row mt-2 p-0 m-0 ">
+       <div class="edit_profile_border px-4 py-3">
+        <form action="" method="post ">
+            <!-- <h6>Profile Information :</h6> -->
+           <div class="row justify-content-center mx-auto p-2 mb-2">
+            <a class="btn  back2 text-white "ype="button" href="">Create A Professional Profile</a>
+           </div>
+
+            <label class="w-100" for="">First Name</label>
+            <input  class="w-100" type="text">
+
+            <label for="">Last Name</label>
+            <input  class="w-100" type="text">
+
+            <label for="">Email</label>
+            <input class="w-100" type="text">
+
+            <label for="">City</label>
+            <input  class="w-100" type="text">
+
+            <label for="">Country</label>
+            <input  class="w-100" type="text">
+
+           
+
+            <label for="">Pin Code</label>
+            <input  class="w-100" type="text">
+
+            <label for="">My Fevourite Style</label>
+            <input  class="w-100" type="text">
+ 
+            <label for="">About Me</label>
+            <input  class="w-100" type="text">
+
+            <label for="">Next Page</label>
+            <input  class="w-100" type="text">
+           
+          <!-- <div>
+            <h6 class="mt-1">Job Cost :</h6>
+            <label class="w-25" for="">From:</label> <label class="w-25" for="">To:</label>
+            <input  class="w-100" type="text">
+          </div> -->
+
+       
+             </div>
+           </form>
+          </div>
+        </div>
+
+    </div>
+    
+
+
+
+
+
+<!--  -->
+<%- include('footer') -%>
+<script>
+  loadfile = function(event){
+      let image = document.getElementById('output')
+      image.src=URL.createObjectURL(event.target.files[0])
+  }
+</script>
+<script>
+  "use strict";
+// Proxy button for <input/>
+document.getElementById("btn-file-upload").onclick = function(e) {
+  //e.preventDefault();
+  document.getElementById("input-file-upload").click();
+};
+
+// Handler for <input/> change
+document.getElementById("input-file-upload").onchange = function(e) {
+  let file = e.target.files; // FileList
+  console.log(file);
+  if(file) {
+    let reader = new FileReader();
+    reader.onload = function(e) {
+      let result = e.target.result;
+      // ...
+      // Do stuff with result
+      let s = result.split(',');
+      console.log(s[0]);
+      // ...
+    };
+    reader.readAsDataURL(file[0]); // Read as DataURL
+  }
+  document.getElementById("file-upload").reset(); // Reset, so we can use the same filename
+};
+</script>

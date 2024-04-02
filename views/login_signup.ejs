@@ -1,0 +1,324 @@
+<%- include('header') -%>
+<style>
+    #signup{
+        display: none;
+    }
+    #f_password{
+        display: none;
+    }
+</style>
+<!--  -->
+<div class="container-fluid bg1 p-0">
+<div class="row p-0 m-0 justify-content-end">
+<!--    
+  <div class="col-2 nav-pills " style=" margin-top: 26vh;" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+    <a  onclick="show_login()" class="nav-link active text_v text-white py-2" id="btn1" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="" role="tab" aria-controls="v-pills-home" aria-selected="true">Login</a>
+    <a  onclick="show_signup()" class="nav-link text_v text-white py-2" id="btn2" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="" role="tab" aria-controls="v-pills-profile" aria-selected="false">Signup</a>
+   
+    <a  onclick="show_f_password()" class="nav-link text_v text-white py-2" id="btn3" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="" role="tab" aria-controls="v-pills-messages" aria-selected="false">Forgot Password </a>
+    
+  </div> -->
+   
+     
+     <!-- <div class="col-2 py-3 text-center ps-3" style="margin-top: 20vh;">
+      
+        <a id="btn1" onclick="show_login()"  class="text_v text-white py-2 nav_link">Login</a>
+      
+        <a  id="btn2" onclick="show_signup()"  class="text_v text-white py-2">Signup</a>
+        <a   id="btn3" onclick="show_f_password()"  class="text_v text-white py-2">Forgot Password</a>
+     </div> -->
+     <div class="col-10 bg2 border border-success" >
+       <!--  login start -->
+<div class="" id="login">
+   
+    <div class="container-fluid p-0 m-0 py-0  " id="">  
+        <div class="row m-0 p-0">
+            <div class="text-center mt-5">
+                <h6 class="mb-0 text_color text_style">Login</h6>
+                <p class="f12 c1">Please enter the credentials below</p>
+               </div >
+       
+            <div >
+            <div class=" login_div p-2" id="">
+              
+                <form action="" method="post">
+                    <p class="mb-0">Email</p>
+                  <div class="mb-1 mt-2 border border-dark i1 shadow2">
+                  
+                   <span class="input_font">
+                    <i class="fa-solid fa-envelope ms-2"></i>
+                    <input class="w-75" type="email" placeholder=" Email Address">
+                   </span>
+                  </div>
+                  <p class="mb-0">Password</p>
+                  <div class="mb-0 mt-2  i1 border border-dark shadow2">
+                    
+                    <span class="input_font">
+                        <i class="fa-solid fa-lock ms-2"></i>
+                    <input type="password" class="w-75 " id="myInput"  placeholder=" *******">
+                    <i  onclick="myFunction()" class="fa-regular fa-eye fa-xs "></i>
+                    </span>
+                  </div>
+
+                  <div class="col-12 text-end">
+                    <div class=" pt-2 px-1">
+                       <span >
+                        <p id="btn3"  onclick="show_f_password()"  class="f11 mt-1 "> Forgot password?<a class="text_color fw-bold"> Click Here</a></p>
+                       </span>
+                      </div>
+                </div>
+                 
+        
+                 
+                  <div class="mt-3 shadow2 rounded">
+                    <a type="button"  class="btn  w-100 shadow2 rounded-2" href="/home">Login</a>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <div class=" pt-2 px-1">
+                       <span >
+                        <p id="btn2"   onclick="show_signup()"  class="f11 mt-1"> Don't have an account?<a class="text_color fw-bold"> Signup</a></p>
+                       </span>
+                      </div>
+                </div>
+                 
+                </form>
+            </div>
+        </div>
+            
+        </div>
+        
+        </div>
+
+
+   
+</div>
+<!-- login end -->
+
+ <!-- signup start  -->
+    <div id="signup">
+        <div class="container-fluid ">
+            <div class="row" m-0 p-0 >
+              <div class="col-12 p-0 pt-2" >
+                <a href="/"><i class="fa-solid fa-arrow-left  ps-2"></i></a>
+              </div>
+              <div>
+                
+               
+                <!-- <p class="logo_style"> Connect</p> <span class="logo_style2">one</span> -->
+              </div>
+              <div class="text-center pt-4 ">
+                <h6 class=" text_color mb-0 logo_style text_style">
+                  WELCOME!
+                </h6>
+                <h6 class="mb-3 text_color text_style">Signup</h6>
+                
+               </div>
+        
+        <div class="px-2">
+            <div class=" login_div  px-0">
+                <form action="" method="post">
+                 
+                 <div class="mb-1 mt-2 border  border-dark i1 shadow2">
+                    
+                    <span class="">
+                     <i class="fa-solid fa-user fa-sm ps-2  mt-2"></i>
+                     <input class="w-75 ps-2 " type="email" placeholder=" Email">
+                    </span>
+                   </div>
+                 <div class="mb-1 mt-2 border border-dark i1 shadow2">
+                    
+                    <span class="">
+                    
+                     <i class="fa-solid fa-phone fa-sm ps-2"></i>
+                     <input class="w-75 ps-2" type="number" placeholder=" Phone Number">
+                    </span>
+                   </div>
+                 <div class="mb-1 mt-2 border  border-dark i1 shadow2">
+                    
+                    <span class="">
+                        <i class="fa-solid fa-lock fa-sm ps-2"></i>
+                     <input class=" w-75 ps-2" type="password" placeholder="Password ">
+                    </span>
+                   </div>
+             
+                   <div class="mb-1 mt-2 border  border-dark i1 shadow2">
+                    
+                    <span class="">
+                        <i class="fa-solid fa-lock fa-sm ps-2"></i>
+                     <input class="ps-2 w-75" type="password" placeholder=" Re Password ">
+                    </span>
+                   </div>
+                   
+             <div class="d-flex p-0">
+                 <div class="ps-1">
+                     <input class="ps-2 checkbox_size" type="checkbox" placeholder=" ">
+                 </div>
+                 <div class=" ms-2 pt-1">
+                     <label class="f11" for="">Terms & Condition</label>
+                 </div>
+                 </div>
+        
+                  <div class=" shadow2 rounded">
+                     <a type="button" class="btn  w-100" href="/yourself">Signup</a>
+                  </div>
+                </form>
+             </div>
+        </div>
+        
+            </div>
+        </div>
+    </div> 
+    
+  <!-- singhup end  -->
+  
+  <!-- F_password start -->
+
+  <div id="f_password">
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 p-0  pt-2">
+            <a href="/"><i class="fa-solid fa-arrow-left  ps-2"></i></a>
+          </div>
+            <div class=" pt-5 text-center">
+                <h6 class="mb-0 text_color text_style"> Yo! Forgot Your Password</h6>
+                <p class="f11 c1 px-3" >No worries! Enter your email and we will send you a reset </p>
+              </div>
+         <div class=" py-2 login_div">
+    
+            <div class="p-2">
+                 
+              <div class="text-center pb-3">
+                <img class="w-25 img-fluid" src="/static/images/key3.png" alt="">
+              </div>
+    
+              <form action="" method="post">
+                <div class="">
+                 <div class="mb-1 mt-3 border border-dark i1   shadow2">
+                    
+                    <span class="input_font">
+                     <i class="fa-solid fa-envelope ms-2"></i>
+                     <input class="w-75" type="email" placeholder=" Email Address">
+                    </span>
+                   </div>
+                </div>
+     
+                   <div class="justify-content-center ">
+                     <a type="button"  class="btn  w-100 mt-3" href="">Send Request</a>
+                   </div>
+             </form>
+            </div>
+               
+              
+          
+    
+         </div>
+        </div>
+    </div>
+  </div>
+  <!-- F_password start -->
+        
+</div>  
+     
+</div>
+</div>
+
+
+
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-12 text-center px-0 m-0  ">
+        
+             <div class="copy_right absolute "> 
+                 <p>copyright 2023</p>
+                </div>
+                
+           
+          </div>
+        </div>
+    </div>
+    
+
+
+
+<!--  -->
+<%- include('footer') -%>
+<!--  -->
+
+
+
+<script>
+    function myFunction() {
+      let x = document.getElementById("myInput");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+    </script> 
+
+      <script>
+        function show_login() {
+        let btn1=  document.getElementById("btn1");
+        let login=  document.getElementById("login");
+        
+        if(login.style.display !='none'){
+        signup.style.display='none'
+        f_password.style.display='none'
+    }else{
+        login.style.display='block'
+        signup.style.display='none'
+        f_password.style.display='none'
+    }
+        }
+        </script>
+
+<script>
+    function show_signup() {
+    let btn2=  document.getElementById("btn2");
+    let signup=  document.getElementById("signup");
+    // let login=  document.getElementById("login");
+    if(signup.style.display !='none'){
+        login.style.display='none'
+        f_password.style.display='none'
+        
+    }else{
+        signup.style.display='block'
+        login.style.display='none'
+        f_password.style.display='none'
+
+    }
+  
+    }
+    </script>
+
+<script>
+    function show_f_password() {
+    let btn3=  document.getElementById("btn3");
+    let f_password=  document.getElementById("f_password");
+    if(f_password.style.display !='none'){
+        login.style.display='none'
+        signup.style.display='none'
+    }else{
+        f_password.style.display='block'
+        login.style.display='none'
+        signup.style.display='none'
+    }
+  
+    }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded",function(){
+            document.getElementById('signup').style.display='none'
+        });
+    </script>
+     <script>
+        document.addEventListener("DOMContentLoaded",function(){
+            document.getElementById('f_password').style.display='none'
+        });
+    </script>
+
+
+       
+

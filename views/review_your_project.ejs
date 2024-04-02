@@ -1,0 +1,117 @@
+<%- include('header') -%>
+<!--  -->
+
+<div class="container-fluid sticky-top header2">
+    
+    <div class="row justify-content-between py-2 px-0">
+        <div class="col-5  editprofile ">
+          <a href="/pro_page"><i class="fa-solid fa-xmark fa-lg ps-2"></i></a>
+
+        </div>
+        <div class="col-4  text-end saveprofile">
+          <!-- <a href="">Save</a> -->
+        </div>
+        
+    </div>
+</div>
+<!--  -->
+<div class="container-fluid project_location page_height back3">
+    <div class="row ">
+        <div class="col-8">
+            <h6 class="text-white f14">Review your project info</h6>
+        </div>
+        <div class="col-4 text-end">
+          <h6 class="mb-0 text-white f13">  6 of 6</h6>
+        </div>
+        <!-- <p class="text-white f12 mb-0">Tap to select a main photo for your project</p> -->
+        <!-- <p class="text-white f12 ">ou can start with one and more after you publish</p> -->
+        <form action="" method="post">
+            <div class="mt-2">
+                <div class="row">
+                    <p class="f12 text-white mb-0">Project Photos</p>
+                    <div class="col-6"></div>
+                    <div class="col-6 text-end">
+                        <a class="text-white f11 fw-bold" href="/upload_project_photo">EDIT</a>
+                    </div>
+                </div>
+                <hr>
+               
+            </div>
+            <div class="mt-1">
+                <div class="row">
+                    <p class="f12 text-white mb-0">Project Title & Location</p>
+                    <div class="col-6"></div>
+                    <div class="col-6 text-end">
+                        <a class="text-white f11 fw-bold" href="/project_title_location">EDIT</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="mt-1">
+                <div class="row">
+                    <p class="f12 text-white mb-0">Cover Photo</p>
+                    <div class="col-6"></div>
+                    <div class="col-6 text-end">
+                        <a class="text-white f11 fw-bold" href="/select_cover_photo">EDIT</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="mt-1">
+                <div class="row">
+                    <p class="f12 text-white mb-0">Style & Cost</p>
+                    <div class="col-6"></div>
+                    <div class="col-6 text-end">
+                        <a class="text-white f11 fw-bold" href="/select_style_cost">EDIT</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="mt-1">
+                <div class="row">
+                    <p class="f12 text-white mb-0">Description & Creadit</p>
+                    <div class="col-6"></div>
+                    <div class="col-6 text-end">
+                        <a class="text-white f11 fw-bold" href="/describe_this_project">EDIT</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </form>
+
+        <div class=" mb-5 p_b p-0 m-0 ">    
+            <div class="progress progress-striped back3">
+              <div class="progress-bar">
+              </div>                       
+            </div> 
+          </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid footer_home2 px-0 text-center">
+   
+     <!-- <div class="project_location_1"></div> -->
+    <!-- <div class="project_location_1 border border-danger"> 
+        <div class="projetc_bar" id="projectbar"></div>
+    </div> -->
+    <div class="row text-center mx-0 justify-content-center ">
+        
+        <div class="col-6  text-center mt-1 py-1">
+           <a href="/describe_this_project"><button class="btn btn-outline-light w-100 btn-sm">PREV</button></a>
+         
+        </div>
+       
+       
+        <div class="col-6 text-center mt-1 py-1">
+            <a href="/review_your_project"><button class="btn btn-light w-100 btn-sm"  id="nextpage">UPLOAD</button></a>
+        </div>
+    </div>
+</div>
+<!--  -->
+<%- include('footer') -%>

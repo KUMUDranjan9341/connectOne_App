@@ -1,0 +1,77 @@
+<%- include('header') -%>
+<!--  -->
+
+<div class="container-fluid">
+    <div class="row">
+        <h2 class="text-center py-2">Current Location</h2>
+        <div class="col-6">
+         <p id="demo"></p>
+        </div>
+
+        <div class="col-6">
+
+        </div>
+
+        <div class="col-6">
+
+        </div>
+
+        <div class="col-6">
+
+        </div
+        >
+        <button class="btn btn-outline-danger w-25" onclick="getLocation()">Try It</button>
+        <!-- <a class="btn" type="button" onclick="getLocation()" href="">Fill current location</a> -->
+    </div>
+</div>
+
+<!--  -->
+
+<!--  -->
+<!-- <p>Click the button to get your coordinates.</p> -->
+  
+<!-- <script>
+    $(document).ready(function() {
+    $.getJSON(getLocation, function(demo) {
+      const markers = demo.map(({
+        latLang
+      }) => new position.Marker({
+        map: myMap,
+        position: new position.LatLng(parseGeo(latLang))
+      }));
+    });
+  });
+
+  const parseGeo = str => {
+    const [lat, lng] = str.split(':').map(value => parseFloat(value, 10));
+    return {
+      lat,
+      lng
+    };
+  }
+</script> -->
+
+
+
+<script>
+let x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+  console.log(position)
+}
+
+</script>
+
+
+<!--  -->
+<%- include('footer') -%>
